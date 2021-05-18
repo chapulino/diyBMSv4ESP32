@@ -57,7 +57,7 @@ $("#rt2").text("Las reglas se procesan desde la prioridad más baja hasta la má
 //Rules are triggered when the relevant value meets or exceeds the 'trigger' value. The rule will only disable when the value then passes the 'reset' value. This can help prevent relay clatter and rules firing on/off rapidly.
 $("#rt3").text("Las reglas se activan cuando el valor relevante alcanza o supera el valor de 'activación'. La regla solo se desactivará cuando el valor pase el valor de 'reseteo'. Esto puede ayudar a evitar el traqueteo de los relés y a que las reglas se activen o desactiven rápidamente.");
 //'Timer 1' and 'Timer 2' rules allow timed operation, this rule is active when the number of minutes past midnight has been reached, for instance setting 'Timer 1' trigger to 495 and reset to 555 would switch on at 8:15am and off at 9:15am. This only works if connected to internet for regular time updates.
-$("#rt4").text("Las reglas 'Temporizador 1' y 'Temporizador 2' permiten el funcionamiento temporizado, esta regla está activa cuando se alcanza el número de minutos después de la medianoche, por ejemplo, si se configura el disparador del 'Temporizador 1' en 495 y se restablece en 555, se encendería a las 8:15 a. M. y sale a las 9:15 am. Esto solo funciona si está conectado a Internet para actualizaciones periódicas.");
+$("#rt4").text("Las reglas 'Temporizador 1' y 'Temporizador 2' permiten el funcionamiento temporizado, esta regla está activa cuando se alcanza el número de minutos después de la medianoche, por ejemplo, si se configura el disparador del 'Temporizador 1' en 495 y se restablece en 555, se encendería a las 8:15am. y sale a las 9:15am. Esto solo funciona si está conectado a Internet para actualizaciones periódicas.");
 //Minutes since midnight now is: 
 $("#rt5").text("Minutos desde la medianoche ahora es:");
 //Emergency stop is triggered by connector J1, once triggered controller needs to be reset to disable.
@@ -83,13 +83,13 @@ $("label[for='rule3value']").text("Celda individual por encima de voltaje (mV)")
 //Cell under voltage (mV)
 $("label[for='rule4value']").text("Celda individual por debajo de voltaje (mV)");
 //Module over temperature (internal) °C	= 
-$("label[for='rule5value']").text("Modulo por encima de temperatua (interna) °C");
+$("label[for='rule5value']").text("Modulo por encima de temperatura (interna) °C");
 //Module under temperature (internal)
-$("label[for='rule6value']").text("Modulo por debajo de temperatua (interna) °C");
+$("label[for='rule6value']").text("Modulo por debajo de temperatura (interna) °C");
 //Cell over temperature (external)
-$("label[for='rule7value']").text("Celda por encima de temperatua (externa) °C");
+$("label[for='rule7value']").text("Celda por encima de temperatura (externa) °C");
 //Cell under temperature (external)
-$("label[for='rule8value']").text("Celda por debajo de temperatua (externa) °C");
+$("label[for='rule8value']").text("Celda por debajo de temperatura (externa) °C");
 //Pack over voltage (mV)
 $("label[for='rule9value']").text("Paquete por encima de voltaje (mV)");
 //Pack under voltage (mV)
@@ -110,32 +110,32 @@ $("label[for='g1']").text("Bypass over temperature");
 //Bypass threshold mV
 $("label[for='g2']").text("Bypass threshold mV");
 
-$("#sent > span.x.t").text("Packets sent:");
-$("#received > span.x.t").text("Packets rec'd:");
+$("#sent > span.x.t").text("Paquetes enviados:");
+$("#received > span.x.t").text("Paquetes recibidos'd:");
 $("#roundtrip > span.x.t").text("Roundtrip (ms):");
 
 //Integration
-$("#ip1").text("Integration");
+$("#ip1").text("Integración");
 //For security, you will need to re-enter the password for the service(s) you want to enable or modify, before you save.
-$("#ip2").text("For security, you will need to re-enter the password for the service(s) you want to enable or modify, before you save.");
+$("#ip2").text("Por seguridad, necesita reingresar el password para el servicio(s) que se desean activar o modificar, antes de salvar la configuración.");
 //After changes are made, the controller will need to be rebooted, do this manually.
-$("#ip3").text("After changes are made, the controller will need to be rebooted, do this manually.");
+$("#ip3").text("Despues de realizados los cambios, el controlador debe ser reiniciado, hagalo manualmente.");
 
 //WARNING
 $("#ap5").text("WARNING");
 //This is a DIY product/solution so don’t use this for safety critical systems or in any situation where there could be a risk to life.
-$("#ap6").text("This is a DIY product/solution so don’t use this for safety critical systems or in any situation where there could be a risk to life.");
+$("#ap6").text("Esta es una DIY producto/solución por tanto no debe usarse para seguridad de sistemas criticos o en cualquier situacion en la cual podria suponer un riesgo.");
 //There is no warranty, it may not work as expected or at all.
-$("#ap7").text("There is no warranty, it may not work as expected or at all.");
+$("#ap7").text("No hay garantía, puede que no funcione como se espera o no funcione en absoluto.");
 //The use of this project is done so entirely at your own risk. It may involve electrical voltages which could kill - if in doubt, seek help.
-$("#ap8").text("The use of this project is done so entirely at your own risk. It may involve electrical voltages which could kill - if in doubt, seek help.");
+$("#ap8").text("El uso de este proyecto se realiza bajo su propio riesgo. Puede involucrar voltajes eléctricos que podrían causar la muerte - en caso de duda, busque ayuda.");
 //The use of this project may not be compliant with local laws or regulations - if in doubt, seek help.
-$("#ap8a").text("The use of this project may not be compliant with local laws or regulations - if in doubt, seek help.");
+$("#ap8a").text("Es posible que el uso de este proyecto no cumpla con las leyes o regulaciones locales - en caso de duda, busque ayuda.");
 
 //Modules & Banks
 $("#mb1").text("Modules & Banks");
 //DIYBMS supports up to 100 modules in total. These modules can be split into banks to support parallel configurations.
-$("#mb2").text("DIYBMS supports up to 100 modules in total. These modules can be split into banks to support parallel configurations.");
+$("#mb2").text("DIYBMS admite hasta 100 módulos en total. Estos módulos se pueden dividir en bancos para admitir configuraciones en paralelo.");
 //Example: You have 16 cells configured as 8 in series and 2 in parallel (8S2P).
-$("#mb3").text("Example: You have 16 cells configured as 8 in series and 2 in parallel (8S2P).");
+$("#mb3").text("Ejemplo: tiene 16 celdas configuradas 8 en serie y 2 en paralelo (8S2P).");
 
